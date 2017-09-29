@@ -44,7 +44,7 @@ If you install NPM, you can run commands via NPM:
 and ngx_pagespeed module.
 - image uses debian's `certbot` package.
 - `script/entrypoint.sh` requests LE certificate and will refresh every 70 days (default value).
-- hipster-server on [docker-hub](https://hub.docker.com/)
+- hipster-server on [docker-hub](https://hub.docker.com/r/newhr/hipster-server/)
 
 
 ## About
