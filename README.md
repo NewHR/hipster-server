@@ -1,6 +1,6 @@
 # Hipster Server
 
-### Simple modern Nginx image Debian based with Let's Encrypt integrated and Google Page Speed module support
+### Simple modern Nginx server image based Debian with Let's Encrypt integrated and Google Page Speed module support
 
 Hipster Server - a modern Nginx web and proxy server docker container image with automatic [Let's Encrypt](https://letsencrypt.org) certificates, HTTP/2 and [Google Page Speed module](https://developers.google.com/speed/pagespeed/module/) module supports.
 
