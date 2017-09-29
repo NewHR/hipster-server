@@ -1,0 +1,32 @@
+version : '3'
+services:
+
+    nginx:
+        build: .
+        image: newhr/hipster-server:latest
+        hostname: nginx
+        restart : always
+        network_mode: host
+        container_name: nginx
+
+        logging:
+            driver: json-file
+            options:
+                max-size: "10m"
+                max-file: "5"
+
+        volumes:
+            - ./etc/nginx:/etc/nginx
+            - ./etc/letsencrypt:/etc/letsencrypt
+            - ./pagespeed:/var/pagespeed
+            - /www/sites:/www/sites
+            - /var/log:/var/log
+
+        environment:
+            - TIMEZONE=Europe/Moscow
+            - LETSENCRYPT=false
+            - LE_EMAIL=
+            - LE_DNAME=
+            - LE_RT=70d
+
+#EOF#

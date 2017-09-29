@@ -1,0 +1,11 @@
+{
+  "version": "1.0.1",
+  "name": "docker-commands",
+  "description": "Predefined commands for control docker containers (not NPM package!)",
+  "scripts": {
+    "build": "docker-compose build;docker images",
+    "start": "docker-compose up -d;docker ps",
+    "stop" : "docker-compose down;docker-compose stop && docker rm -f $(docker ps -qa);docker ps -a",
+    "clean": "docker rmi -f $(docker images | grep none | awk '{print $3}');docker images"
+  }
+}
