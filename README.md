@@ -48,7 +48,7 @@ and ngx_pagespeed module.
 
 
 ## About
-Created for hipsetrs in New.HR by developers of this company :)
+Created for hipsters in New.HR by new.hr-developers :)
 
 ### Need a JOB?
 See our job list: http://vacancy.new.hr
