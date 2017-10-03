@@ -3,6 +3,9 @@
 echo "Init env"
 mkdir -pv /var/log/nginx
 
+[ ! -d "/etc/nginx/conf.d" ] && mkdir -vp "/etc/nginx/conf.d"
+[ ! -d "/etc/nginx/ssl"    ] && mkdir -vp "/etc/nginx/ssl"
+
 ###
 echo "Enviroument variables"
 echo "TIMEZONE=$TIMEZONE"
