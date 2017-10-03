@@ -9,7 +9,6 @@ Hipster Server - a modern Nginx web and proxy server docker container image with
 - get docker-compose.yml and change things for enable automatic SSL and HTTP/2
     - set `LETSENCRYPT=true` if you want automatic certificate install and renewal
     - `LE_EMAIL` should be your email
-    - `LE_DNAME` should be your main domain name
 - pull image - `docker-compose pull`
 - if you don't want pre-built image, make you own. `docker-compose build` will do it
 - start it `docker-compose up`
